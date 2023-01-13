@@ -3,7 +3,7 @@
 
 import json
 words = json.load(open("words_dictionary.json", "r"))
-ref_word = input()
+ref_word = input().lower()
 not_same_word = ref_word # this is used to make sure the program doesn't just spit the same word back at you
 
 for testWords in words:
